@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Library</h1>
+
+    <main>Welcome to the library</main>
+    <p>
+      This is a library app. You can add books according to the title, author
+      name and pages. Also select the books which you have read
+    </p>
+
+    <div class="main-row">
+      <form action="submit" class="add-books">
+        <label for="title"> Book Title: </label>
+        <input type="text" id="book-title" name="title" required />
+        <label for="author"> Book Author: </label>
+        <input type="text" id="author" name="author" required />
+        <label for="pages"> Pages: </label>
+        <input type="number" id="pages" name="pages" required />
+        <label for="read-status"> Read: </label>
+        <input type="checkbox" id="read" name="read" />
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </div>
+
+    <div class="table-div">
+      <table>
+        <thead>
+          <tr>
+            <th>Book Title</th>
+            <th>Book Author</th>
+            <th>Pages</th>
+            <th>Read/Unread</th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
